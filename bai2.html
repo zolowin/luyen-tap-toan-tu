@@ -11,20 +11,7 @@
 <body>
     <script>
         let login = prompt("input message: ");
-        let text;
-        switch (login) {
-            case "Employee":
-                text = 'Hello';
-                break;
-            case "Director":
-                text = 'Greetings';
-                break;
-            case "":
-                text = 'No Login';
-                break;
-            default:
-                text = ''
-        }
+        let text = (login == 'employee') ? 'hello' : (login== 'director')? 'getting' : (login== '') ? 'no login': '';
         alert(text);
     </script>
 </body>
